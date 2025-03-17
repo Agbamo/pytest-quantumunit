@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantumunit"
+version = "0.1.0"
+description = "A pytest plugin for quantum computing assertions"
+authors = [{name = "Tu Nombre", email = "tuemail@example.com"}]
+dependencies = ["pytest", "qiskit"]
+
+[tool.setuptools]
+packages = ["quantumunit"]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+quantumunit = ["py.typed"]
+
+[project.entry-points.pytest11]
+quantumunit = "quantumunit.pytest_plugin"

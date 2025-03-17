@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: quantumunit
+Version: 0.1.0
+Summary: A pytest plugin for quantum computing assertions
+Author-email: Antonio Barrera <agbamo@hotmail.com>
+Requires-Dist: pytest
+Requires-Dist: qiskit
